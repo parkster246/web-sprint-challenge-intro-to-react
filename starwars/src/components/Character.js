@@ -23,7 +23,7 @@ const CharacterList = (props) => {
         <CharacterInfo className = "character-info">
             <h2>Character Name: {props.name}</h2>
             <CharacterContent className ="character-content">
-                <li>Films: {props.films}</li>
+                <h3>Films:</h3> {props.films.map(film => <p>{film}</p>)}
             </CharacterContent>
          </CharacterInfo>
         )
