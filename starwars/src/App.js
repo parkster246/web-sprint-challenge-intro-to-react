@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import CharacterList from "./components/Character";
-
+import styled from 'styled-components';
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -23,8 +23,18 @@ useEffect( () => {
   });
 }, []);
 
+const App = styled.div`
+&:hover {
+  background:black;
+  color:red;
+}
+
+`;
+
+
+
   return (
-    <div className="App">
+    <App className="App">
       <h1 className="Header">Characters</h1>
 
      {data.map(data => {
@@ -38,7 +48,7 @@ useEffect( () => {
      })}
        
      
-    </div>
+    </App>
   );
 }
 

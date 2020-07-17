@@ -10,6 +10,10 @@ const CharacterInfo = styled.div `
     margin-left: 50px;
     margin-right: 50px;
 
+&:hover {
+    background:black;
+    color:red;
+}
 `;
 
 const CharacterContent = styled.div`
@@ -17,6 +21,11 @@ font-size: 16px;
 margin: 5px;
 color: black;
 background:red;
+
+&:hover {
+    background:black;
+    color:red;
+}
 `;
 const CharacterList = (props) => {
     return(
